@@ -1,0 +1,182 @@
+<view class="taskD">
+  <view class="stateImg">
+    <image mode="scaleToFill" src="../../image/doing.png"/>
+  </view>
+  <view class="detailItem">
+    <text class="label">名</text>
+    <view class="taskCon"><text class="taskNameTitle">我是第一个任务</text></view>
+  </view>
+  <view class="detailItem">
+    <text class="label">父</text>
+    <view class="taskCon"><text>我是第一个任务父级</text></view>
+  </view>
+  <view class="detailItem flex">
+    <view>
+      <text class="label">创</text>
+      <view class="taskCon2"><text>创建人</text></view>
+    </view>
+     <view>
+      <text class="label">责</text>
+      <view class="taskCon2"><text>负责人</text></view>
+    </view>
+  </view>
+  <view class="detailItem">
+    <text class="label" style="float: left;">附</text>
+    <view class="taskCon" style="font-size: 22rpx;"><text>我是附件</text></view>
+  </view>
+  <view class="detailItem">
+    <text class="label">止</text>
+    <view class="taskCon"><text>2019-05-21 13:14:00</text></view>
+  </view>
+  <view class="taskMsg detail">
+    <text class="label">详</text>
+    <view>这是详情这是详情这是详情这是详情这是详情这是详情这是详情这是详情</view>
+  </view>
+  <view class="nameTitle">评论</view>
+  <view class="history">
+    <view class="logBox">
+      <view class="TimeLine" style="position: relative;">
+        <view class="quan1"></view>
+        <view class="timeDate">2019-05-21 13:14:00</view>
+        <view class="timeCont">习大大说：<text class="listColor">中华人民共和国富强啦</text>
+          <view class="contBoxContentWrap">
+            <view class="contBoxContent">
+              <text class="filepre">附件: <text style="display: inline-block;">这是一个附件</text></text>
+              <a href="#">下载</a>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="TimeLine" style="position: relative;">
+        <view class="quan1"></view>
+        <view class="timeDate">2019-05-21 13:14:00</view>
+        <view class="timeCont">老板说：<text class="listColor">放假30天，公司大庆</text>
+          <view class="contBoxContentWrap">
+            <view class="contBoxContent">
+              <text class="filepre">附件: <text style="display: inline-block;">这是一个附件</text></text>
+              <a href="#">下载</a>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="TimeLine" style="position: relative;">
+        <view class="quan1"></view>
+        <view class="timeDate">2019-05-21 13:14:00</view>
+        <view class="timeCont">习大大说：<text class="listColor">中华人民共和国富强啦</text>
+          <view class="contBoxContentWrap">
+            <view class="contBoxContent">
+              <text class="filepre">附件: <text style="display: inline-block;">这是一个附件</text></text>
+              <a href="#">下载</a>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+   <view class="nameTitle">操作记录</view>
+  <view class="history">
+    <view class="logBox">
+      <view class="TimeLine" style="position: relative;">
+        <view class="quan"></view>
+        <view class="timeDate">2019-05-21 13:14:00</view>
+        <view class="timeCont">习大大说：<text class="listColor">中华人民共和国富强啦</text>
+          <view class="contBoxContentWrap">
+            <view class="contBoxContent">
+              <text class="filepre">附件: <text style="display: inline-block;">这是一个附件</text></text>
+              <a href="#">下载</a>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="TimeLine" style="position: relative;">
+        <view class="quan"></view>
+        <view class="timeDate">2019-05-21 13:14:00</view>
+        <view class="timeCont">老板说：<text class="listColor">放假30天，公司大庆</text>
+          <view class="contBoxContentWrap">
+            <view class="contBoxContent">
+              <text class="filepre">附件: <text style="display: inline-block;">这是一个附件</text></text>
+              <a href="#">下载</a>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="TimeLine" style="position: relative;">
+        <view class="quan"></view>
+        <view class="timeDate">2019-05-21 13:14:00</view>
+        <view class="timeCont">习大大说：<text class="listColor">中华人民共和国富强啦</text>
+          <view class="contBoxContentWrap">
+            <view class="contBoxContent">
+              <text class="filepre">附件: <text style="display: inline-block;">这是一个附件</text></text>
+              <a href="#">下载</a>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="taskDevide" onTap="toDecompositionTask"><image mode="scaleToFill" src="../../image/addtaskicon.png"/></view>
+  <!-- 移交 -->
+  <view class="model" a:if="{{showModelTran}}">
+    <view class="modelCont2">
+      <view class="modelTitle">任务移交</view>
+      <view class="modelTop">
+        <view>人员:</view>
+        <input placeholder="请搜索移交人员" />
+      </view>
+      <view class="modelTop">
+        <view>备注:</view>
+        <textarea placeholder="请输入移交备注"></textarea>
+      </view>
+      <view class="modelTop">
+        <view>附件:</view>
+        <view class="uploadfile" onTap="uploadFile">请选择移交附件</view>
+      </view>
+      <view class="modelBtn">
+        <button size="mini" type="" style="color:#888;" onTap="concelTran">取消</button>
+        <button size="mini" type="primary" style="margin-left: 20px;">提交</button>
+      </view>
+    </view>
+  </view>
+  <!-- 评论 -->
+  <view class="model" a:if="{{showModel}}">
+    <view class="modelCont">
+      <view class="modelTitle">添加评论</view>
+      <view class="modelTop">
+        <view>评论:</view>
+        <textarea placeholder="请输入评论内容"></textarea>
+      </view>
+      <view class="modelTop">
+        <view>附件:</view>
+        <view class="uploadfile" onTap="uploadFile">请选择评论附件</view>
+      </view>
+      <view class="modelBtn">
+        <button size="mini" type="" style="color:#888;" onTap="concelCom">取消</button>
+        <button size="mini" type="primary" style="margin-left: 20px;">提交</button>
+      </view>
+    </view>
+  </view>
+  <!-- 完成 -->
+  <view class="model" a:if="{{showModelFinish}}">
+    <view class="modelCont">
+      <view class="modelTitle">任务完成</view>
+      <view class="modelTop">
+        <view>备注:</view>
+        <textarea placeholder="请输入完成备注"></textarea>
+      </view>
+      <view class="modelTop">
+        <view>附件:</view>
+        <view class="uploadfile" onTap="uploadFile">请选择完成附件</view>
+      </view>
+      <view class="modelBtn">
+        <button size="mini" type="" style="color:#888;" onTap="concelFinished">取消</button>
+        <button size="mini" type="primary" style="margin-left: 20px;">评论</button>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <button type="primary" onTap="startTask">开始</button>
+    <button type="primary" onTap="tranTask">移交</button>
+    <button type="primary" onTap="addComment">评论</button>
+    <button type="primary" onTap="finishedTask">完成</button>
+  </view>
+</view>

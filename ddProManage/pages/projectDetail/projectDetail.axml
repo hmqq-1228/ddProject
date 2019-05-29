@@ -1,0 +1,135 @@
+<view>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" onTap="clickTab">基本信息</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" onTap="clickTab">成员管理</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" onTap="clickTab">计划管理</view>
+    <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" onTap="clickTab">历史记录</view>
+  </view>
+  <view class = "{{currentTab == 0 ? 'show':'hidden'}}" >
+    <scroll-view>
+      <view class="taskName">
+        <view class="name">项目名称:</view>
+        <input placeholder="请输入项目名称" />
+      </view>
+      <view class="taskName">
+        <view class="name">负 责 人:</view>
+        <input placeholder="请输入负责人的姓名或拼音" />
+      </view>
+      <view class="taskName">
+        <view class="name">项目类型:</view>
+        <view class="itemCon">
+          <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="row">
+              <view class="row-extra"><text>{{array[index]}}</text></view>
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="taskName">
+        <view class="name">开始日期:</view>
+        <view class="itemCon" onTap="pickerDateTime">{{date}}</view>
+      </view>
+      <view class="taskName">
+        <view class="name">完成日期:</view>
+        <view class="itemCon" onTap="pickerDateTime2">{{date2}}</view>
+      </view>
+      <view class="taskName2">
+        <view class="name">项目描述:</view>
+        <view class="itemCon">
+          <textarea onBlur="bindTextAreaBlur" placeholder="请填写项目详情" />
+        </view>
+      </view>
+      <view class="taskName2">
+        <view class="name">项目附件:</view>
+        <view class="itemCon" onTap="uploadFile" style="color:#999;">请选择项目附件</view>
+      </view>
+      <view class="subButton" a:if="{{showBtn}}">
+        <button size="default" type="primary" onTap="editProjectMsg">信息修改</button>
+      </view>
+      <view class="subButton2" a:if="{{!showBtn}}">
+        <button class="defaultBtn" size="default" type="" onTap="concelEditMsg">取消修改</button>
+        <button size="default" type="primary">立即保存</button>
+      </view>
+    </scroll-view>
+  </view>
+  <view class = "{{currentTab == 1 ? 'show':'hidden'}}" >
+    <scroll-view>
+      <view class="addPeople">
+        <view>
+          <input placeholder="请搜索添加成员" />
+          <button size="mini" type="primary">添加</button>
+        </view>
+        <button style="width:220rpx;" size="mini" type="primary">从组织添加</button>
+      </view>
+      <view class="menberList">
+        <view class="menNav">
+          <view>角色</view>
+          <view>姓名</view>
+          <view>查看</view>
+          <view>编辑</view>
+          <view>清空</view>
+        </view>
+        <view class="menItem">
+          <view>负责人</view>
+          <view>王小二</view>
+          <view style="padding-top: 8px;">
+            <checkbox value="1" checked="checked"/>
+          </view>
+           <view style="padding-top: 8px;">
+            <checkbox value="2"/>
+          </view>
+          <view style="padding-top: 4px;"><image mode="scaleToFill" src="../../image/close.png"/></view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class = "{{currentTab == 2 ? 'show':'hidden'}}">
+    <scroll-view>
+      <text>暂无内容3</text>
+    </scroll-view>
+  </view>
+  <view class = "{{currentTab == 3 ? 'show':'hidden'}}">
+    <scroll-view>
+      <view class="history">
+        <view class="logBox">
+          <view class="TimeLine" style="position: relative;">
+            <view class="quan"></view>
+            <view class="timeDate">2019-05-21 13:14:00</view>
+            <view class="timeCont">习大大说：<text class="listColor">中华人民共和国富强啦</text>
+              <view class="contBoxContentWrap">
+                <view class="contBoxContent">
+                  <text class="filepre">附件: <text style="display: inline-block;">这是一个附件</text></text>
+                  <a href="#">下载</a>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="TimeLine" style="position: relative;">
+            <view class="quan"></view>
+            <view class="timeDate">2019-05-21 13:14:00</view>
+            <view class="timeCont">老板说：<text class="listColor">放假30天，公司大庆</text>
+              <view class="contBoxContentWrap">
+                <view class="contBoxContent">
+                  <text class="filepre">附件: <text style="display: inline-block;">这是一个附件</text></text>
+                  <a href="#">下载</a>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="TimeLine" style="position: relative;">
+            <view class="quan"></view>
+            <view class="timeDate">2019-05-21 13:14:00</view>
+            <view class="timeCont">习大大说：<text class="listColor">中华人民共和国富强啦</text>
+              <view class="contBoxContentWrap">
+                <view class="contBoxContent">
+                  <text class="filepre">附件: <text style="display: inline-block;">这是一个附件</text></text>
+                  <a href="#">下载</a>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

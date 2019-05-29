@@ -1,0 +1,31 @@
+<view>
+  <view class="taskName">
+    <view class="name">日程名称:</view>
+    <input placeholder="请输入日程名称" />
+  </view>
+  <view class="taskName">
+    <view class="name">开始日期:</view>
+    <view class="itemCon" onTap="pickerDateTime">{{date}}</view>
+  </view>
+  <view class="taskName">
+    <view class="name">完成日期:</view>
+    <view class="itemCon" onTap="pickerDateTime2">{{date2}}</view>
+  </view>
+  <view class="taskName">
+    <view class="name">提醒时间:</view>
+    <view class="itemCon">
+      <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="row">
+          <view class="row-extra"><text>{{array[index]}}</text></view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="subButton" a:if="{{showBtn}}">
+    <button size="default" type="primary" onTap="editScheduleMsg">信息修改</button>
+  </view>
+  <view class="subButton2" a:if="{{!showBtn}}">
+    <button class="defaultBtn" size="default" type="" onTap="concelEditMsg">取消修改</button>
+    <button size="default" type="primary">立即保存</button>
+  </view>
+</view>

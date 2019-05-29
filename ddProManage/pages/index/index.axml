@@ -1,0 +1,86 @@
+<view class="taskBox">
+   <view class="search-outer">
+      <input
+        class="search-input"
+        placeholder="请输入任务名称"
+        value="{{search}}"
+        onConfirm="doneSearch"
+        onInput="handleSearch"
+      />
+      <!-- <text class="search-cancel" onTap="clearSearch">取消</text> -->
+    </view>
+    <view class="gardState">
+       <view onTap="selectState" data-num='1'>
+         <view class="num over">105</view>
+         <view class="stateText" style="color:{{overStyle}}">已逾期</view>
+       </view>
+       <view onTap="selectState" data-num='2'>
+         <view class="num nustarte">5</view>
+         <view class="stateText" style="color:{{nustarteStyle}}">未开始</view>
+       </view>
+       <view onTap="selectState" data-num='3'>
+         <view class="num doing">12</view>
+         <view class="stateText" style="color:{{doingStyle}}">进行中</view>
+       </view>
+       <view onTap="selectState" data-num='4'>
+         <view class="num finish">20</view>
+         <view class="stateText" style="color:{{finishStyle}}">已完成</view>
+       </view>
+    </view>
+    <view class="taskNav">
+      <view class="taskTag">我的任务</view>
+      <view class="range">
+        <text>按时间</text>
+        <text>按等级</text>
+      </view>
+    </view>
+    <view class="taskList">
+      <view class="taskItem" onTap="toMyTaskDetail">
+        <view class="taskLeft">
+          <view class="taskName">
+              <view class="name">我是第一个任务</view>
+              <view class="stateStr">已完成</view>
+          </view>
+          <view class="taskBelong"><text class="label">项</text> 属于这是项目</view>
+          <view class="taskPeople"><text class="label">创</text> 王小二</view>
+          <view class="taskBot">
+            <view class="taskLevel">等级：<text class="label dot">5</text></view>
+            <view class="taskTime"><text class="label">止</text> 2019-05-20 14:00:00</view>
+          </view>
+        </view>
+        <view class="taskRight"><image src="../../image/toDetail.png"/></view>
+      </view>
+      <view class="taskItem">
+        <view class="taskLeft">
+          <view class="taskName">
+              <view class="name">我是第二个任务</view>
+              <view class="stateStr">已完成</view>
+          </view>
+          <view class="taskBelong"><text class="label">项</text> 属于这是项目</view>
+          <view class="taskPeople"><text class="label">创</text> 李小三</view>
+          <view class="taskBot">
+            <view class="taskLevel">等级：<text class="label dot">5</text></view>
+            <view class="taskTime"><text class="label">止</text> 2019-05-20 14:00:00</view>
+          </view>
+        </view>
+        <view class="taskRight"><image src="../../image/toDetail.png"/></view>
+      </view>
+      <view class="taskItem">
+        <view class="taskLeft">
+          <view class="taskName">
+              <view class="name">我是第三个任务</view>
+              <view class="stateStr">已完成</view>
+          </view>
+          <view class="taskBelong"><text class="label">项</text> 属于这是项目</view>
+          <view class="taskPeople"><text class="label">创</text> 赵小四</view>
+          <view class="taskBot">
+            <view class="taskLevel">等级：<text class="label dot">5</text></view>
+            <view class="taskTime"><text class="label">止</text> 2019-05-20 14:00:00</view>
+          </view>
+        </view>
+        <view class="taskRight"><image src="../../image/toDetail.png"/></view>
+      </view>
+    </view>
+  <!-- <button size="default" type="primary" onTap="toMyTaskList">我的任务</button> -->
+  <!-- <my-component /> -->
+</view>

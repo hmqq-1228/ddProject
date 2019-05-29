@@ -1,0 +1,52 @@
+.taskName{
+  height: 80rpx;
+  display: flex;
+  line-height: 80rpx;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #666;
+  justify-content: flex-start;
+}
+.name{
+  width: 20%;
+}
+.taskName input{
+  width: 80%;
+  margin-top: 10rpx;
+}
+.itemCon{
+  width: 80%;
+}
+.radio{
+  margin-left: 20px;
+}
+.radio:nth-of-type(1){
+  margin-left: 0;
+}
+.pickerbox{
+  width: 25%;
+}
+.taskName2{
+  display: flex;
+  line-height: 80rpx;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #666;
+  justify-content: flex-start;
+}
+.taskName2 textarea{
+  width: 100%;
+  font-size:13px;
+  color:rgb(102, 102, 102);
+  min-height: 160rpx;
+  padding-top: 20rpx;
+}
+.subButton{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}

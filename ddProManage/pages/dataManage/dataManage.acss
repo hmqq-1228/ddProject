@@ -1,0 +1,168 @@
+ .weekHeader{
+    display: flex;
+    text-align: center;
+    padding: 5px 0;
+    font-family: '黑体';
+    height: 30px;
+    color: #666;
+    line-height: 30px;
+    background-color: #fff;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
+   .weekItem{
+    width: 13.4%;
+  }
+  .grids{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 265px;
+    position: relative;
+    background-color: #fff;
+    justify-content: space-between;
+  }
+  .grid{
+    width: 13.4%;
+    height: 40px;
+    color: #666;
+    text-align: center;
+    line-height: 40px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  .grid .active{
+    color: #fff;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: coral;
+  }
+.taskName{
+  height: 80rpx;
+  display: flex;
+  line-height: 80rpx;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #666;
+  justify-content: flex-start;
+}
+.name{
+  width: 20%;
+}
+.itemCon{
+  width: 80%;
+}
+.checkbox{
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  display: flex;
+  width: 240rpx;
+  font-size: 24rpx;
+  justify-content: space-between;
+}
+.checkbox view{
+  color: #888;
+  height: 22px;
+  width: 80rpx;
+  line-height: 22px;
+  text-align: center;
+  background-color: #f8f8fa;
+}
+.checkbox view:nth-of-type(1){
+  border-radius: 4px 0 0 4px;
+}
+.checkbox view:nth-of-type(3){
+  border-radius: 0 4px 4px 0;
+}
+.checkbox .checked{
+  background-color: #26a2ff;
+  color: #fff;
+}
+.dateItem{
+  display: flex;
+  margin-top: 2px;
+  height: 30px;
+  color: #888;
+  font-size: 26rpx;
+  line-height: 30px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.dateName{
+  width: 60%;
+  color: #666;
+  padding-left: 10px;
+}
+.dateTime{
+  width: 40%;
+}
+.label{
+  display: inline-block;
+  color: chocolate;
+  width: 28rpx;
+  height: 28rpx;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 28rpx;
+  border: 1px solid chocolate;
+  border-radius: 50%;
+  }
+  .show{
+    display: block;
+  }
+  .hidden{
+    display: none;
+  }
+  .myTaskItem{
+    margin-top: 2px;
+    height: 60px;
+    color: #888;
+    padding: 10px;
+    font-size: 26rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  .itemTop{
+    display: flex;
+    justify-content: space-between;
+  }
+  .itemBot{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  .myTaskName{
+    width: 80%;
+    font-size: 28rpx;
+    color: #555;
+    font-family: '黑体';
+  }
+  .taskState{
+    width: 20%;
+    text-align: right;
+  }
+  .taskCreat{
+    width: 50%;
+    color: #666;
+  }
+  .creatTime{
+    width: 50%;
+    text-align: right;
+  }
+  .rt{
+    margin-left: 4px;
+  }
+  .taskDevide{
+    position: fixed;
+    top: 42%;
+    right: 0;
+    width: 42rpx;
+    height: 180rpx;
+  }
+  .taskDevide image{
+    width: 100%;
+    height: 100%;
+  }

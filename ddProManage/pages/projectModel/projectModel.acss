@@ -1,0 +1,62 @@
+.modelItem{
+  position: relative;
+  height: 120rpx;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+.modelItem2{
+  position: relative;
+  height: 180rpx;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+.modelName{
+  color: #555;
+  font-size: 28rpx;
+}
+.modelType{
+  margin-top: 20rpx;
+  color: #888;
+  font-size: 26rpx;
+}
+.modelName text{
+  font-family: initial;
+  color: chocolate;
+  font-size: 24rpx;
+}
+.modelTag{
+  padding: 4px 6px;
+  background-color: rgba(230,162,60,.1);
+  border-color: rgba(230,162,60,.2);
+  color: #e6a23c;
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  width: 1rem;
+  font-size: 0.24rem;
+  border-radius: 4px;
+  text-align: center;
+  font-family: '黑体',
+}
+.modelTag2{
+  padding: 4px 6px;
+  background-color: rgba(103,194,58,.1);
+  border-color: rgba(103,194,58,.2);
+  color: #67c23a;
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  width: 1rem;
+  font-size: 0.24rem;
+  border-radius: 4px;
+  text-align: center;
+  font-family: '黑体',
+}

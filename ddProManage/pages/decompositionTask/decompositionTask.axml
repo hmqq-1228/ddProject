@@ -1,0 +1,41 @@
+<view>
+  <view class="taskName">
+    <view class="name">任务名称:</view>
+    <input placeholder="请输入任务名称" />
+  </view>
+  <view class="taskName">
+    <view class="name">任务级别:</view>
+    <view class="itemCon">
+      <radio-group class="radio-group" onChange="radioChange">
+        <label class="radio" a:for="{{items}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class="taskName">
+    <view class="name">任务指派:</view>
+    <input placeholder="请输入指派人的姓名或拼音" />
+  </view>
+  <view class="taskName">
+    <view class="name">开始日期:</view>
+    <view class="itemCon" onTap="pickerDateTime">{{date}}</view>
+  </view>
+  <view class="taskName">
+    <view class="name">完成日期:</view>
+    <view class="itemCon" onTap="pickerDateTime2">{{date2}}</view>
+  </view>
+  <view class="taskName2">
+    <view class="name">任务描述:</view>
+    <view class="itemCon">
+      <textarea onBlur="bindTextAreaBlur" placeholder="请填写任务详情" />
+    </view>
+  </view>
+  <view class="taskName2">
+    <view class="name">任务附件:</view>
+    <view class="itemCon" onTap="uploadFile" style="color:#999;">请选择任务附件</view>
+  </view>
+  <view class="subButton">
+    <button size="default" type="primary">立即分解</button>
+  </view>
+</view>

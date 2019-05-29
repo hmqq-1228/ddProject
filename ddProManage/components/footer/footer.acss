@@ -1,0 +1,34 @@
+.tabbar{
+  width: 100%;
+  font-size: 22rpx;
+  padding: 10rpx 0;
+  background-color: #fff;
+  border-top: 1rpx solid #eee;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content:space-around;
+}
+.tabbarItem{
+  width: 25%;
+  text-align: center;
+}
+.tabbarIcon{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 2rpx auto;
+}
+.tabbarIcon image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.tabbarText{
+  text-align: center;
+  font-size: 22rpx;
+}
+/* .tabbarIcon.task{
+  background-image: url(../../image/tasked.png);
+  background-position: center;
+  background-size: 100%;
+} */

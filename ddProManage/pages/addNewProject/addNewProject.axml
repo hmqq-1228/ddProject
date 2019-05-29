@@ -1,0 +1,49 @@
+<view>
+  <view class="taskName">
+    <view class="name">项目名称:</view>
+    <input placeholder="请输入项目名称" />
+  </view>
+  <view class="taskName">
+    <view class="name">负 责 人:</view>
+    <input onInput="searchPeople" value="{{pValue}}" placeholder="请输入负责人的姓名或拼音" />
+  </view>
+  <view class="taskName2" a:if="{{peopleList.length>0?true:false}}">
+    <view class="itemCon2">
+      <view>张三(开发工程师)</view>
+      <view>李四(数据分析师)</view>
+      <view>田七(开发工程师)</view>
+      <view>王八(银行业务员)</view>
+    </view>
+  </view>
+  <view class="taskName">
+    <view class="name">项目类型:</view>
+    <view class="itemCon">
+      <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="row">
+          <view class="row-extra"><text>{{array[index]}}</text></view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="taskName">
+    <view class="name">开始日期:</view>
+    <view class="itemCon" onTap="pickerDateTime">{{date}}</view>
+  </view>
+  <view class="taskName">
+    <view class="name">完成日期:</view>
+    <view class="itemCon" onTap="pickerDateTime2">{{date2}}</view>
+  </view>
+  <view class="taskName2">
+    <view class="name">项目描述:</view>
+    <view class="itemCon">
+      <textarea onBlur="bindTextAreaBlur" placeholder="请填写项目详情" />
+    </view>
+  </view>
+  <view class="taskName2">
+    <view class="name">项目附件:</view>
+    <view class="itemCon" onTap="uploadFile" style="color:#999;">请选择项目附件</view>
+  </view>
+  <view class="subButton">
+    <button size="default" type="primary">立即创建</button>
+  </view>
+</view>

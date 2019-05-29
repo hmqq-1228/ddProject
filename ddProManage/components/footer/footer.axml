@@ -1,0 +1,28 @@
+<view class="wrapper">
+<view class='tabbar'>
+  <view class='tabbarItem' data-linkpage="totask" onTap="bottomNavClick">
+    <view class='tabbarIcon'>
+      <image src="{{taskImg}}"/>
+      </view>
+    <view class='tabbarText' style="color:{{taskText}}">我的任务</view>
+  </view>
+  <view class='tabbarItem' data-linkpage="toproject" onTap="bottomNavClick">
+    <view class='tabbarIcon'>
+      <image src="{{proImg}}"/>
+    </view>
+    <view class='tabbarText'>我的项目</view>
+  </view>
+  <view class='tabbarItem' data-linkpage="tomine" onTap="bottomNavClick">
+    <view class='tabbarIcon'>
+      <image src="../../image/my.png"/>
+    </view>
+    <view class='tabbarText'>我发起的</view>
+  </view>
+  <view class='tabbarItem' data-linkpage="todata" onTap="bottomNavClick">
+    <view class='tabbarIcon'>
+      <image src="../../image/dateManage.png"/>
+    </view>
+    <view class='tabbarText'>我的日程</view>
+  </view>
+</view>
+</view>

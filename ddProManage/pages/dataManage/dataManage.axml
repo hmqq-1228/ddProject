@@ -1,0 +1,106 @@
+<view>
+  <view>
+    <view class="taskName">
+      <view class="name">选择年月:</view>
+      <view class="itemCon" onTap="pickerDateTime">{{dateYear}}</view>
+    </view>
+    <view class="weekHeader">
+      <view style="color: red" class="weekItem">日</view>
+      <view class="weekItem">一</view>
+      <view class="weekItem">二</view>
+      <view class="weekItem">三</view>
+      <view class="weekItem">四</view>
+      <view class="weekItem">五</view>
+      <view style="color: red" class="weekItem">六</view>
+    </view>
+    <view class="grids">
+      <view class="grid" a:for="{{monGrids}}">
+        <text class="{{item.light == true?'active':''}}" a:if="{{item.date !== 0}}">{{item.date}}</text>
+      </view>
+      <view class="checkbox">
+        <view class="{{checkActive == 1? 'checked': ''}}" data-state="1" onTap="checkState">日程</view>
+        <view class="{{checkActive == 2? 'checked': ''}}" data-state="2" onTap="checkState">任务</view>
+        <view class="{{checkActive == 3? 'checked': ''}}" data-state="3" onTap="checkState">发起</view>
+      </view>
+    </view>
+    <view class="{{checkActive == 1? 'show': 'hidden'}}">
+      <view class="dateItem" onTap="toScheduleDetail">
+        <view class="dateName">日程名称</view>
+        <view class="dateTime"><text class="label">止</text><text style="padding-left: 6px;">2019-05-25 13:14:00</text></view>
+      </view>
+      <view class="dateItem">
+        <view class="dateName">日程名称</view>
+        <view class="dateTime"><text class="label">止</text><text style="padding-left: 6px;">2019-05-25 13:14:00</text></view>
+      </view>
+      <view class="dateItem">
+        <view class="dateName">日程名称</view>
+        <view class="dateTime"><text class="label">止</text><text style="padding-left: 6px;">2019-05-25 13:14:00</text></view>
+      </view>
+    </view>
+    <view class="{{checkActive == 2? 'show': 'hidden'}}">
+      <view class="myTaskItem">
+        <view class="itemTop">
+          <view class="myTaskName">我是一个任务</view>
+          <view class="taskState">已完成</view>
+        </view>
+        <view class="itemBot">
+          <view class="taskCreat"><text class="label">创</text> <text class="rt">创建人</text></view>
+          <view class="creatTime"><text class="label">止</text> <text class="rt">2019-05-25 16:13:00</text></view>
+        </view>
+      </view>
+       <view class="myTaskItem">
+        <view class="itemTop">
+          <view class="myTaskName">我是一个任务</view>
+          <view class="taskState">已完成</view>
+        </view>
+        <view class="itemBot">
+          <view class="taskCreat"><text class="label">创</text> <text class="rt">创建人</text></view>
+          <view class="creatTime"><text class="label">止</text> <text class="rt">2019-05-25 16:13:00</text></view>
+        </view>
+      </view>
+       <view class="myTaskItem">
+        <view class="itemTop">
+          <view class="myTaskName">我是一个任务</view>
+          <view class="taskState">已完成</view>
+        </view>
+        <view class="itemBot">
+          <view class="taskCreat"><text class="label">创</text> <text class="rt">创建人</text></view>
+          <view class="creatTime"><text class="label">止</text> <text class="rt">2019-05-25 16:13:00</text></view>
+        </view>
+      </view>
+    </view>
+     <view class="{{checkActive == 3? 'show': 'hidden'}}">
+      <view class="myTaskItem">
+        <view class="itemTop">
+          <view class="myTaskName">我是一个任务</view>
+          <view class="taskState">已完成</view>
+        </view>
+        <view class="itemBot">
+          <view class="taskCreat"><text class="label">创</text> <text class="rt">责任人</text></view>
+          <view class="creatTime"><text class="label">止</text> <text class="rt">2019-05-25 16:13:00</text></view>
+        </view>
+      </view>
+       <view class="myTaskItem">
+        <view class="itemTop">
+          <view class="myTaskName">我是一个任务</view>
+          <view class="taskState">已完成</view>
+        </view>
+        <view class="itemBot">
+          <view class="taskCreat"><text class="label">责</text> <text class="rt">责任人</text></view>
+          <view class="creatTime"><text class="label">止</text> <text class="rt">2019-05-25 16:13:00</text></view>
+        </view>
+      </view>
+       <view class="myTaskItem">
+        <view class="itemTop">
+          <view class="myTaskName">我是一个任务</view>
+          <view class="taskState">已完成</view>
+        </view>
+        <view class="itemBot">
+          <view class="taskCreat"><text class="label">创</text> <text class="rt">责任人</text></view>
+          <view class="creatTime"><text class="label">止</text> <text class="rt">2019-05-25 16:13:00</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="taskDevide" onTap="addNewSchedule"><image mode="scaleToFill" src="../../image/newaddSchedule.png"/></view>
+  </view>
+</view>

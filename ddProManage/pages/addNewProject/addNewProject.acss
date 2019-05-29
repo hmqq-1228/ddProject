@@ -1,0 +1,72 @@
+.taskName{
+  height: 80rpx;
+  display: flex;
+  line-height: 80rpx;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #666;
+  justify-content: flex-start;
+}
+.name{
+  width: 20%;
+}
+.taskName input{
+  width: 80%;
+  margin-top: 10rpx;
+}
+.itemCon{
+  width: 80%;
+}
+.taskName2{
+  position: relative;
+}
+.itemCon2{
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  background-color: #fff;
+  z-index: 999;
+  border: 1px solid #f1f1f1;
+}
+.itemCon2 view{
+  height: 30px;
+  color: #888888;
+  font-size: 12px;
+  line-height: 30px;
+  padding-left: 20px;
+  border-bottom: 1px dashed #f1f1f1;
+}
+.radio{
+  margin-left: 20px;
+}
+.radio:nth-of-type(1){
+  margin-left: 0;
+}
+.pickerbox{
+  width: 25%;
+}
+.taskName2{
+  display: flex;
+  line-height: 80rpx;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #666;
+  justify-content: flex-start;
+}
+.taskName2 textarea{
+  width: 100%;
+  font-size:13px;
+  color:rgb(102, 102, 102);
+  min-height: 160rpx;
+  padding-top: 20rpx;
+}
+.subButton{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myProjectList/myProjectList",
+    "pages/myCreatProject/myCreatProject",
+    "pages/dataManage/dataManage",
+    "pages/taskDetail/taskDetail",
+    "pages/decompositionTask/decompositionTask",
+    "pages/projectModel/projectModel",
+    "pages/addNewProject/addNewProject",
+    "pages/projectDetail/projectDetail",
+    "pages/addNewSchedule/addNewSchedule",
+    "pages/scheduleDetail/scheduleDetail"
+  ],
+  "window": {
+    "defaultTitle": "项目管理"
+  },
+  "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#108ee9",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "icon": "image/tasked.png",
+        "activeIcon": "image/taskActive.png",
+        "name": "我的任务"
+      },
+      {
+        "pagePath": "pages/myProjectList/myProjectList",
+        "icon": "image/xiangmu.png",
+        "activeIcon": "image/xiangmuActive.png",
+        "name": "我的项目"
+      },
+      {
+        "pagePath": "pages/myCreatProject/myCreatProject",
+        "icon": "image/my.png",
+        "activeIcon": "image/myActive.png",
+        "name": "我发起的"
+      },
+      {
+        "pagePath": "pages/dataManage/dataManage",
+        "icon": "image/dateManage.png",
+        "activeIcon": "image/dateManageActive.png",
+        "name": "我的日程"
+      }
+    ]
+  }
+}

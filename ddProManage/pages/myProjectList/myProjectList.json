@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "我的项目",
+  "usingComponents": {
+    "my-component": "../../components/footer/footer"
+  }
+}

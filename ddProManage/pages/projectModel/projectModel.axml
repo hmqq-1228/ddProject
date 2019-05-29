@@ -1,0 +1,21 @@
+<view>
+  <view class="modelBox">
+    <view class="modelItem" onTap="toAddNewProject">
+      <view class="modelName">空白模板<text> (自定义工期)</text></view>
+      <view class="modelType">通用模板</view>
+      <view class="modelTag">空白模板</view>
+    </view>
+    <view class="modelItem2">
+      <view class="modelName">产品研发项目</view>
+      <view class="modelType">创建人: 管理员</view>
+      <view class="modelType">2019-03-11 11:25:36</view>
+      <view class="modelTag2">产品研发</view>
+    </view>
+    <view class="modelItem2">
+      <view class="modelName">产品研发项目V2</view>
+      <view class="modelType">创建人: 管理员</view>
+      <view class="modelType">2019-05-20 13:14:00</view>
+      <view class="modelTag2">产品研发</view>
+    </view>
+  </view>
+</view>

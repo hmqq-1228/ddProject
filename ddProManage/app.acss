@@ -1,0 +1,9 @@
+page {
+  flex: 1;
+  display: flex;
+  background: #f7f7f7;
+}
+view {
+  width: 100%;
+}
+/* @import "components/footer/footer.acss"; */

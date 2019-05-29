@@ -1,0 +1,111 @@
+<view class="projectBox">
+  <view class="search-outer">
+    <input
+      class="search-input"
+      placeholder="请输入项目名称"
+      value="{{search}}"
+      onConfirm="doneSearch"
+      onInput="handleSearch"
+    />
+      <!-- <text class="search-cancel" onTap="clearSearch">取消</text> -->
+  </view>
+    <view class="gardState">
+      <view data-colornum = "1" onTap="selectData">
+        <view class="num nustarte">5</view>
+        <view class="stateText" style="color:{{unStart}}">未开始</view>
+      </view>
+      <view data-colornum = "2" onTap="selectData">
+        <view class="num doing">12</view>
+        <view class="stateText" style="color:{{doing}}">进行中</view>
+      </view>
+      <view data-colornum = "3" onTap="selectData">
+        <view class="num finish">20</view>
+        <view class="stateText" style="color:{{finished}}">已完成</view>
+      </view>
+  </view>
+  <view class="taskNav">
+    <view class="taskTag">我的项目</view>
+    <view class="range">
+      <view class="page-section">
+        <picker onChange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="row">
+            <view class="row-extra">项目类型：<text>{{array[index]}}</text></view>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="projectList">
+    <view class="proItem" onTap="toProjectDetail">
+      <view class="proTop">
+        <view class="name">我是第一个项目</view>
+      </view>
+      <view class="proModel">
+        <view><text class="label">类</text> 集团战略</view>
+        <view><text class="label">责</text> 袁鹏(开发工程师)</view>
+      </view>
+      <view class="proTime"><text class="label">止</text> 2019-05-20 13:14:00</view>
+      <view class="proStep">
+        <view class="progress">进度: </view>
+        <view><progress percent="80" activeColor="#6abf47" backgroundColor="#f1f1f1" stroke-width="6" show-info/></view>
+      </view>
+    </view>
+    <view class="proItem">
+      <view class="proTop">
+        <view class="name">我是第二个项目</view>
+      </view>
+      <view class="proModel">
+        <view><text class="label">类</text> 集团战略</view>
+        <view><text class="label">责</text> 袁鹏(开发工程师)</view>
+      </view>
+      <view class="proTime"><text class="label">止</text> 2019-05-20 13:14:00</view>
+      <view class="proStep">
+        <view class="progress">进度: </view>
+        <view><progress percent="60" activeColor="#6abf47" backgroundColor="#f1f1f1" stroke-width="6" show-info/></view>
+      </view>
+    </view>
+     <view class="proItem">
+      <view class="proTop">
+        <view class="name">我是第二个项目</view>
+      </view>
+      <view class="proModel">
+        <view><text class="label">类</text> 集团战略</view>
+        <view><text class="label">责</text> 袁鹏(开发工程师)</view>
+      </view>
+      <view class="proTime"><text class="label">止</text> 2019-05-20 13:14:00</view>
+      <view class="proStep">
+        <view class="progress">进度: </view>
+        <view><progress percent="60" activeColor="#6abf47" backgroundColor="#f1f1f1" stroke-width="6" show-info/></view>
+      </view>
+    </view>
+     <view class="proItem">
+      <view class="proTop">
+        <view class="name">我是第二个项目</view>
+      </view>
+      <view class="proModel">
+        <view><text class="label">类</text> 集团战略</view>
+        <view><text class="label">责</text> 袁鹏(开发工程师)</view>
+      </view>
+      <view class="proTime"><text class="label">止</text> 2019-05-20 13:14:00</view>
+      <view class="proStep">
+        <view class="progress">进度: </view>
+        <view><progress percent="60" activeColor="#6abf47" backgroundColor="#f1f1f1" stroke-width="6" show-info/></view>
+      </view>
+    </view>
+    <view class="proItem">
+      <view class="proTop">
+        <view class="name">我是第三个项目</view>
+      </view>
+      <view class="proModel">
+        <view><text class="label">类</text> 集团战略</view>
+        <view><text class="label">责</text> 袁鹏(开发工程师)</view>
+      </view>
+      <view class="proTime"><text class="label">止</text> 2019-05-20 13:14:00</view>
+      <view class="proStep">
+        <view class="progress">进度: </view>
+        <view><progress percent="40" activeColor="#6abf47" backgroundColor="#f1f1f1" stroke-width="6" show-info/></view>
+      </view>
+    </view>
+  </view>
+  <view class="taskDevide" onTap="addNewProject"><image mode="scaleToFill" src="../../image/newaddicon.png"/></view>
+</view>
